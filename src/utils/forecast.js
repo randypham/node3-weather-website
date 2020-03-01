@@ -16,9 +16,13 @@ const forecast = (latitude, longitude, callback) => {
       callback(
         undefined,
         body.daily.data[0].summary +
-          ' Its currently ' +
+          ' It is currently ' +
           body.currently.temperature +
-          ' degrees out.'
+          ' degrees out. This high today is ' +
+          body.daily.data[0].temperatureHigh +
+          ' with a low of ' +
+          body.daily.data[0].temperatureLow +
+          '.'
       );
     }
   });
