@@ -23,14 +23,14 @@ app.use(express.static(publicDirectoryPath));
 app.get('/', (req, res) => {
   res.render('index', {
     title: 'Weather App',
-    name: 'Ryu Yamada'
+    name: 'Randy'
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about', {
     title: 'About',
-    name: 'Ryu Yamada'
+    name: 'Randy'
   });
 });
 
@@ -38,7 +38,7 @@ app.get('/help', (req, res) => {
   res.render('help', {
     title: 'Help',
     helpText: 'This is some help text!',
-    name: 'Ryu Yamada'
+    name: 'Randy'
   });
 });
 
@@ -88,7 +88,7 @@ app.get('/help/*', (req, res) => {
   res.render('404', {
     title: '404',
     errorMessage: 'Help article not found.',
-    name: 'Ryu Yamada'
+    name: 'Randy'
   });
 });
 
@@ -96,7 +96,7 @@ app.get('*', (req, res) => {
   res.render('404', {
     title: '404',
     errorMessage: 'Page not found.',
-    name: 'Ryu Yamada'
+    name: 'Randy'
   });
 });
 
